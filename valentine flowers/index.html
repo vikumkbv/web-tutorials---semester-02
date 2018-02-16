@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+<title>Valentines Flowers - Order your flowers online</title>
+<style>
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #666;
+}
+div.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+h1{
+	font-family: Papyrus, fantasy;
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	margin: 40px 20px 80px 20px;
+}
+div.product {
+    margin: 10px 10px 0 0;
+    border: 1px solid #ccc;
+	background-color: white;
+    float: left;
+    width: 234px;
+    padding-bottom: 5px;
+	
+}
+div.description {
+	text-align: center; font-size: 20px;
+	color: #333; padding-top: 20px;
+	position: relative;
+}
+div.price{
+	color: rgb(204,51,255); 
+	position: relative; 
+	text-align: center;
+	//top:20px; 
+	width: 234px;
+}
+
+div.labelOrder {
+	margin: -75px 10px 0 0;
+	padding-top: 12px;
+	//width: 258px;
+	height: 460px;
+	background-color: #ccc;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+input[type=button], input[type=reset] {  
+float: right; margin-right: 10px; 
+} 
+
+div.form{
+	background-color: darkgray;
+	clear: both; padding: 20px;
+	position: relative; 
+	top: 20px; 
+}
+
+#order {
+height: 376px;
+float: none;
+margin-right: 7px;
+margin-left: 7px;
+}
+#orderDescription {
+font-size: 16px;
+height: 40px;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="container">
+	<h1>Valentines Flowers</h1>
+
+	<div class="product">
+		<img src="images/white.jpeg" alt="white" id="whitepic">
+		<div class="description">White Bouquet</div>
+		<br/><br/>
+		<div class="price">£24</div>
+	</div>
+
+	<div class="product">
+		<img src="images/pink.jpeg" id="pinkpic">
+		<div class="description">Pink Bouquet</div>
+		<br/><br/>
+		<div class="price">£25</div>
+	</div>
+	<div class="product">
+		<img src="images/red.jpeg" id="redpic">
+		<div class="description">Red Bouquet</div>
+		<br/><br/>
+		<div class="price">£20</div>
+	</div>
+		<div class="labelOrder">Your Order:
+		<div id="orderDescription"></div>
+		<div class="product" id="order"><img src="" id="picture">
+		<div class="description" id="des"></div>
+		<br/><br/>
+		<div class="price" id="price"></div>
+</div></div>
+		
+
+	<div class="form">
+		Bouquet Options :
+		<select id="dropd" onchange="report(this.value)" >
+		<option value="pleaseSelect">Please Select</option>
+		<option value="whithChampagne" id="wChapgane" onClick="wChapgane()">With Champgane</option>
+		<option value="extra">50% Extra Flowers</option>
+		<option value="extraWithChampagne">50% Extra Flowers and Champagne</option>
+		</select>
+		Bouquet Colour:  
+		
+		<input type="radio" id="white" name="colour" value="white" onClick="changeSrc()"/> White
+		<input type="radio" id="pink" name="colour" value="pink" onClick="changeSrc()"/> Pink
+		<input type="radio" id="red" name="colour" value="other"value="red" onClick="changeSrc()"/> Red
+		
+		<button type="reset" value="Rest your order" id="reset" onClick="Reset()">Reset your order</button>
+		<button type="submit" value="Place your order" id="submit" onClick="Submit()">Place your order</button>
+		
+		</form>
+</div>
+<script>
+function changeSrc() {
+	var dropDown = document.getElementById("dropd");
+      
+    if (document.getElementById("pink").checked) {
+    document.getElementById("picture").src = "images/pink.jpeg";
+	document.getElementById("des").innerHTML = "£25";
+	document.getElementById("price").innerHTML = "Pink";
+    } 
+	else if (document.getElementById("white").checked) {
+    document.getElementById("picture").src = "images/white.jpeg";
+	document.getElementById("des").innerHTML = "£24";
+	document.getElementById("price").innerHTML = "White";
+    } 
+	else if (document.getElementById("red").checked) {
+    document.getElementById("picture").src = "images/red.jpeg";
+	document.getElementById("des").innerHTML = "£20";
+	document.getElementById("price").innerHTML = "Red";
+    }
+
+		if((document.getElementById("pink").checked)&&((dropDown.selectedIndex==1)||(dropDown.selectedIndex==3))){
+		document.getElementById("picture").src = "images/pink-gift.jpeg";
+		document.getElementById("des").innerHTML = "£25";
+		document.getElementById("price").innerHTML = "Pink";
+	 }else if((document.getElementById("white").checked)&&((dropDown.selectedIndex==1)||(dropDown.selectedIndex==3))){
+		document.getElementById("picture").src = "images/white-gift.jpeg";
+		document.getElementById("des").innerHTML = "£24";
+		document.getElementById("price").innerHTML = "White";
+	 }else if((document.getElementById("red").checked)&&((dropDown.selectedIndex==1)||(dropDown.selectedIndex==3))){
+		document.getElementById("picture").src = "images/red-gift.jpeg";
+		document.getElementById("des").innerHTML = "£20";
+		document.getElementById("price").innerHTML = "Red";
+	 }   
+	 
+	 if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("pink").checked)) {
+    document.getElementById("picture").src = "images/pink-gift.jpeg";
+	document.getElementById("des").innerHTML = "£25";
+	document.getElementById("price").innerHTML = "Pink";
+    } 
+	else if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("white").checked)) {
+    document.getElementById("picture").src = "images/white-gift.jpeg";
+	document.getElementById("des").innerHTML = "£24";
+	document.getElementById("price").innerHTML = "White";
+    } 
+	else if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("red").checked)) {
+    document.getElementById("picture").src = "images/red-gift.jpeg";
+	document.getElementById("des").innerHTML = "£20";
+	document.getElementById("price").innerHTML = "Red";
+    } 
+
+	
+}
+function Reset() {
+		//alert("he");
+        var dropDown = document.getElementById("dropd");
+        dropDown.selectedIndex = 0;
+		(document.getElementById("pink").checked) =false;
+		(document.getElementById("white").checked) =false;
+		(document.getElementById("red").checked) =false;
+		document.getElementById("picture").src = "";
+		document.getElementById("des").innerHTML = "";
+		document.getElementById("price").innerHTML = "";
+		}
+function report(value){
+		if((value=="whithChampagne")||(value=="extraWithChampagne")){
+		document.getElementById("whitepic").src = "images/white-gift.jpeg";
+		document.getElementById("pinkpic").src = "images/pink-gift.jpeg";
+		document.getElementById("redpic").src = "images/red-gift.jpeg";
+		}else if((value=="pleaseSelect")||(value=="extra")){
+		document.getElementById("whitepic").src = "images/white.jpeg";
+		document.getElementById("pinkpic").src = "images/pink.jpeg";
+		document.getElementById("redpic").src = "images/red.jpeg";
+		document.getElementById("picture").src = "";
+		document.getElementById("des").innerHTML = "";
+		document.getElementById("price").innerHTML = "";
+		}
+		if (((value=="extra"))&&(document.getElementById("pink").checked)) {
+    document.getElementById("picture").src = "images/pink.jpeg";
+	document.getElementById("des").innerHTML = "£25";
+	document.getElementById("price").innerHTML = "Pink";
+    } 
+	else if (((value=="extra"))&&(document.getElementById("white").checked)) {
+    document.getElementById("picture").src = "images/white.jpeg";
+	document.getElementById("des").innerHTML = "£24";
+	document.getElementById("price").innerHTML = "White";
+    } 
+	else if (((value=="extra"))&&(document.getElementById("red").checked)) {
+    document.getElementById("picture").src = "images/red.jpeg";
+	document.getElementById("des").innerHTML = "£20";
+	document.getElementById("price").innerHTML = "Red";
+    } 
+		
+	if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("pink").checked)) {
+    document.getElementById("picture").src = "images/pink-gift.jpeg";
+	document.getElementById("des").innerHTML = "£25";
+	document.getElementById("price").innerHTML = "Pink";
+    } 
+	else if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("white").checked)) {
+    document.getElementById("picture").src = "images/white-gift.jpeg";
+	document.getElementById("des").innerHTML = "£24";
+	document.getElementById("price").innerHTML = "White";
+    } 
+	else if (((value=="whithChampagne")||(value=="extraWithChampagne"))&&(document.getElementById("red").checked)) {
+    document.getElementById("picture").src = "images/red-gift.jpeg";
+	document.getElementById("des").innerHTML = "£20";
+	document.getElementById("price").innerHTML = "Red";
+    } 
+}
+function Submit(){ 
+	if((document.getElementById("dropd").selectedIndex==0)||(
+		(document.getElementById("pink").checked==false)
+		&&(document.getElementById("white").checked==false)
+		&&(document.getElementById("red").checked==false))){
+	alert("Please Select your order");
+	}
+}
+
+
+</script>
+</body>
+</html>
+

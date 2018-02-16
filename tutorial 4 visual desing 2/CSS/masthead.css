@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+
+.masthead {
+    background: #21252B;
+    padding: 1.4em 1em .7em;
+    text-align: center;
+    border-bottom: 1px solid #18191B;
+}
+
+.site-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: 200;
+    color: hsl(0, 0%, 95%);
+}
+
+.site-description {
+    margin-top: 0;
+    font-size: 70%;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: hsl(0, 0%, 70%);
+}
