@@ -1,0 +1,136 @@
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/boxes.css');
+
+.main-area {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.the-grid {
+	
+       height:1680px;
+        
+}
+
+.box1{
+    background-color:#9A9867;
+    width:375px;
+    height: 122px;
+}
+
+.box2{
+    width:375px;
+    height:200px;
+    margin-top: 10px;
+    float:left; 
+    margin-bottom: 10px;
+}
+
+.box3{
+    width:640px;
+    height:200px;
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box4{
+	grid-area: sidebarleft;
+	grid-row: 3/4;
+    background-color: #CACC99;
+    width:375px;
+    height:80px;
+    float:left;
+    margin-right: 3px;
+}
+
+.box5{
+    float:right;
+    width: 640px;
+    height: 80px;
+}
+
+.box6{
+    float: right;
+    width:640px;
+    margin-top: 10px;
+}
+
+.box7{
+    width: 375px;
+    margin-top: 157px;
+    height:608px;
+    float:left;
+}
+
+.box8{
+    width:640px;
+    height:auto;
+    float:right;
+    margin-top: 10px;
+
+}
+
+.box9{
+    position:absolute;
+	margin-top: 1385px;
+	margin-left: 0;
+    width:375px;
+    padding-left: 42px;
+    
+}
+
+.box10{
+    width:640px;
+    height:400px;
+    float:right;
+    
+	margin-top: 10px;
+}
+
+.box11{
+    height:100px;
+    width:1025px;
+    background-color: #9A9867;
+	margin-top: 1500px;
+    max-height: 50px;
+}
+#mySidenav a {
+    position: absolute;
+   	text-align: center;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+#recipes {
+    top: 480px;
+    background-color: #4CAF50;
+}
+
+#learn {
+    top: 550px;
+    background-color: #2196F3;
+}
+
+#cuisines {
+    top: 620px;
+    background-color: #f44336;
+}
+
+#health {
+    top: 690px;
+    background-color: #f4c542;
+}
+#more {
+    top: 760px;
+    background-color: #555;
+}

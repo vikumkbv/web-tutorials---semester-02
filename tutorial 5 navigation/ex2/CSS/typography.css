@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #fff;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1, h2{
+	font-color: clear;
+	font-style: clear;
+}
+
+h4{
+	font-family: 'Nanum Myeongjo', serif;
+	color: white;
+	font-size:10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;	
+}
+
+.red-heading{
+	color: #e84c3d;
+}
+
+.grey-heading{
+	color: #666666;
+}
+
+.nav{
+	font-size: 16px;
+}
+
+.description  {
+	font-family: 'Nanum Myeongjo', serif;
+	color: #e84c3d;
+	font-size:2em;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h2, .sub-heading {
+	color: black;
+	font-size: small;
+	font-weight:bold;
+	text-align: center;
+}
+
+
+em,
+i {
+	font-style: italic;
+}
+
+.cook-desc,
+.left
+{
+	color: #333842;
+	font-weight:bold;
+
+}
+
+.right{
+	font-size: 1.5em;
+	color: #e84c3d;
+	text-shadow: 1px 1px 1px #000;
+}
+
+
+.box5 {
+	font-size: smaller;
+	text-align: center;
+}
+
+.video {
+	font-size:24px;
+	color: #e84c3d;
+	text-shadow: 1px 1px 1px #000;
+}
+
+table {
+	font-size: smaller;
+}
+
+th{
+	color: #333842;
+}
+
+.box3{
+	font-size: smaller;
+}
+
+.comments{
+	font-size: small;
+}
+
+.comments p{
+	margin: 0;
+}
+
+.ingredients{
+	font-size: 14px;
+	color:#666666;
+}
+
+.ingredients li {
+	list-style-type: none;
+}
+
+.box1 {
+	font-size: 12px;
+}
+
+.footer-nav{
+	color: #333842;
+	font-style: bold;
+}

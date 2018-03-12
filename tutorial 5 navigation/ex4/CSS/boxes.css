@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+Box styles
+--------------------------------------------------------------*/
+
+.box {
+    padding: 2em;
+    color: white;
+}
+
+.box1 {
+	background-color: #999967;
+}
+
+.box2 {
+
+}
+
+.box3 {
+    background-color: #666666;
+	padding: 10px
+}
+
+.box4 {
+    background-color: #CCCC9A;
+}
+
+.box5 {
+    background-color: #999967;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.box6 {
+    background-color: #e84c3d ;
+}
+
+.box7 {
+    background-color: #CCCC9A;
+}
+
+.box8{
+	background-color: #666666;
+}
+
+.box9{
+	
+}
+
+.box10{
+	   background-color: #e84c3d ;
+}
+
+.box11{
+   background-color: #999967;
+}
+
+

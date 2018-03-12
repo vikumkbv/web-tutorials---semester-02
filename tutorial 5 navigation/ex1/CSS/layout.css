@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+body {
+    background-color:  #CCCCCC;
+}
+
+.main-area {
+	width: 1058px;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #41444B;
+}
+
+.logo{
+	float: left;
+	width: 300px;
+	margin: 15px 70px 10px 70px;
+}
+
+.nav{
+	float: left;
+	margin: 30px 30px 10px 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow:hidden;
+}
+
+ul li {
+	float: left;
+	}
+
+ul li a{
+	float: left;
+	display: block;
+    padding: 10px;
+	}
+	
+.search{
+	float: right;
+	margin: -20px 30px 30px 30px;
+}
+
+.dish-image{
+	width: 250px;
+	height: 200px;
+	margin-left: 15%;
+	background-color: #e84c3d;
+	border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.video {
+	text-align: right;
+	margin-top:-35px;
+}
+
+.left{
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 35px;
+}
+
+.left-rating {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 35px;
+}
+
+.right{
+	float: right;
+	margin-right: 25px;
+	margin-top: 35px;
+	font-size: 1.5em;
+	color: #e84c3d;
+}
+
+
+table {
+    text-align:center;
+	border: 1px solid white;
+	border-spacing: 10px;
+}
+
+th {
+	border-bottom:1px solid white;
+	padding: 5px;
+}
+
+td {
+	padding: 5px;
+}
+
+.ingredients{
+	margin-left: 10%;
+}
+
+.IDs{
+	width: 60px;
+	height: 65px;
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 3px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.box9{
+	margin-left:12%;
+	margin-top: 70%;
+}
+
+.comments{
+	float: left;
+	width: 95%;
+	margin: 5px;
+	padding: 2px;
+	border-bottom: 1px solid white;
+}
+
+.footer-nav{
+	float: left;
+	margin-left: 30%;
+}
+
+
+
+
+
