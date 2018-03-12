@@ -1,0 +1,31 @@
+<?xml version = "1.0" ?>
+<?xml-stylesheet type="text/css" href="my-style.css"?>
+<!DOCTYPE menu [
+<!ELEMENT menu (heading, section+) >
+<!ELEMENT heading (address, title)>
+<!ELEMENT section (subtitle,option*)>
+<!ELEMENT option (item, price)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+<menu>
+	<heading>
+		<address>New York – Harrow – Paris</address>
+		<title>The Bar Cafe Menu</title>
+	</heading>
+<section>
+	<subtitle>Salads </subtitle>
+	<option><item>Chicken salad  </item><price>3.50</price></option>
+	<option><item>Cheese salad   </item><price>2.50</price></option>
+	<option><item>Tuna salad     </item><price>2.00</price></option>
+</section>
+	
+<section>
+	<subtitle>Pasta</subtitle>
+	<option><item>Vegetable pasta  </item><price>2.50</price></option>
+	<option><item>Spaghetti Bolognese  </item><price>3.00</price></option>
+</section>
+</menu>

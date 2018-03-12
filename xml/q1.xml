@@ -1,0 +1,28 @@
+<recipe>
+<name>Oyster Soup</name>
+
+<author>Jamie Oliver</author>
+
+<ingredients>
+<list>
+<item ingredient="optional">1 stalk of celery</item>
+<item>1 onion</item>
+<item>2 tablespoons of butter</item>
+<item>2 cups of oysters and their liquor</item>
+<item>2 cups of milk</item>
+</list>
+</ingredients>
+
+<process>
+
+<p>Begin by sauteing the celery and onions in butter until
+soft.
+Add oysters, oyster liquor, and cream. Heat until the oysters
+float.
+Serve in warm bowls.
+</p>
+
+<p><i>Yummy!</i></p>
+
+</process>
+</recipe>

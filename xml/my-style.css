@@ -1,0 +1,14 @@
+  menu{background-color: black; border: 3px solid green; padding: 10px;
+  		 color: white; display: grid; width: 250px; margin: auto; margin-top: 150px; font-size: 20px;}
+  heading{text-align: center; }
+  address{margin-bottom:5px; color: #ef4545;}
+  
+  title {color:#68dde8; }
+  
+  section {background-color: #514341; padding: 5px; display: grid; margin-top:20px;}
+  
+  subtitle {border-width: 2px; border-radius: 20px; text-decoration: underline; text-decoration-color:#e868ca; color: yellow;  margin-bottom: 10px; border-bottom:3px;}
+  
+  item{float: left;}
+  
+  price{float: right;}
